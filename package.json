@@ -1,36 +1,67 @@
 {
-  "name": "angular2-qrscanner",
-  "version": "0.1.6",
-  "scripts": {
-    "build": "ngc -p tsconfig.json",
-    "lint": "tslint src/**/*.ts",
-    "test": "tsc -p tsconfig.json && karma start",
-    "prepublish": "tsc -p tsconfig.json",
-    "tsc": "tsc -p tsconfig.json"
+  "_args": [
+    [
+      {
+        "raw": "angular2-qrscanner",
+        "scope": null,
+        "escapedName": "angular2-qrscanner",
+        "name": "angular2-qrscanner",
+        "rawSpec": "",
+        "spec": "latest",
+        "type": "tag"
+      },
+      "/home/cipto/Projects/sti-git/idv-gui"
+    ]
+  ],
+  "_from": "angular2-qrscanner@latest",
+  "_id": "angular2-qrscanner@0.1.7",
+  "_inCache": true,
+  "_location": "/angular2-qrscanner",
+  "_nodeVersion": "7.7.1",
+  "_npmOperationalInternal": {
+    "host": "s3://npm-registry-packages",
+    "tmp": "tmp/angular2-qrscanner-0.1.7.tgz_1496381252877_0.11120516527444124"
   },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/tulkasEldarion/angular2-qrscanner"
+  "_npmUser": {
+    "name": "goergch",
+    "email": "goergc@gmx.de"
   },
+  "_npmVersion": "4.1.2",
+  "_phantomChildren": {},
+  "_requested": {
+    "raw": "angular2-qrscanner",
+    "scope": null,
+    "escapedName": "angular2-qrscanner",
+    "name": "angular2-qrscanner",
+    "rawSpec": "",
+    "spec": "latest",
+    "type": "tag"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/angular2-qrscanner/-/angular2-qrscanner-0.1.7.tgz",
+  "_shasum": "7b2255b909c80322d9db38fae7f039c82b1eea4b",
+  "_shrinkwrap": null,
+  "_spec": "angular2-qrscanner",
+  "_where": "/home/cipto/Projects/sti-git/idv-gui",
   "author": {
     "name": "Christian Görg",
     "email": "christian.goerg@de.trumpf.com"
   },
-  "contributors": [
-    "Mosh Mage <moshmage@gmail.com> (http://moshmage.gitlab.io)"
-  ],
-  "keywords": [
-    "angular",
-    "angular2",
-    "QRCode",
-    "Scanner"
-  ],
-  "license": "GPL V3",
   "bugs": {
     "url": "https://github.com/goergch/angular2-qrscanner/issues"
   },
-  "main": "./dist/index.js",
+  "contributors": [
+    {
+      "name": "Mosh Mage",
+      "email": "moshmage@gmail.com",
+      "url": "http://moshmage.gitlab.io"
+    }
+  ],
   "dependencies": {},
+  "description": "QrScanner will scan for a QRCode from your Web-cam and return its string representation by drawing the captured image onto a 2D Canvas and use [@LazarSoft/jsqrcode](https://github.com/LazarSoft/jsqrcode) to check for a valid QRCode every *Xms*",
   "devDependencies": {
     "@angular/common": "^4.1.1",
     "@angular/compiler": "^4.1.1",
@@ -45,5 +76,42 @@
     "tslint": "^5.2.0",
     "typescript": "^2.3.2",
     "zone.js": "^0.8.10"
-  }
+  },
+  "directories": {},
+  "dist": {
+    "shasum": "7b2255b909c80322d9db38fae7f039c82b1eea4b",
+    "tarball": "https://registry.npmjs.org/angular2-qrscanner/-/angular2-qrscanner-0.1.7.tgz"
+  },
+  "gitHead": "f42731da06a36b5f271788db24cfc72449fb5592",
+  "homepage": "https://github.com/tulkasEldarion/angular2-qrscanner#readme",
+  "keywords": [
+    "angular",
+    "angular2",
+    "QRCode",
+    "Scanner"
+  ],
+  "license": "GPL V3",
+  "main": "./dist/index.js",
+  "maintainers": [
+    {
+      "name": "goergch",
+      "email": "goergc@gmx.de"
+    }
+  ],
+  "name": "angular2-qrscanner",
+  "optionalDependencies": {},
+  "readme": "# angular2-qrscanner\nQrScanner will scan for a QRCode from your Web-cam and return its\nstring representation by drawing the captured image onto a 2D Canvas\nand use [@LazarSoft/jsqrcode](https://github.com/LazarSoft/jsqrcode) to check for a valid QRCode every *Xms*\n\n```html\n   <qr-scanner\n      [debug]=\"false\"        <!-- debug flag for console.log spam              (default: false) -->\n      [canvasWidth]=\"640\"    <!-- canvas width                                 (default: 640) -->\n      [canvasHeight]=\"480\"   <!-- canvas height                                (default: 480) -->\n      [mirror]=\"false\"       <!-- should the image be a mirror?                (default: false) -->\n      [stopAfterScan]=\"true\" <!-- should the scanner stop after first success? (default: true) -->\n      [updateTime]=\"500\"     <!-- miliseconds between new capture              (default: 500) -->\n      (onRead)=\"decodedOutput(string)\"></qr-scanner>\n```",
+  "readmeFilename": "README.md",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tulkasEldarion/angular2-qrscanner.git"
+  },
+  "scripts": {
+    "build": "ngc -p tsconfig.json",
+    "lint": "tslint src/**/*.ts",
+    "prepublish": "tsc -p tsconfig.json",
+    "test": "tsc -p tsconfig.json && karma start",
+    "tsc": "tsc -p tsconfig.json"
+  },
+  "version": "0.1.7"
 }

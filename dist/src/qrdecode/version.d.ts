@@ -16,6 +16,7 @@ export declare class ECBlocks {
     getECBlocks: () => any;
 }
 export declare class Version {
+    static buildVersions(): Version[];
     versionNumber: any;
     alignmentPatternCenters: any;
     ecBlocks: any;
@@ -32,5 +33,4 @@ export declare class Version {
     static getVersionForNumber(versionNumber: any): Version;
     static getProvisionalVersionForDimension(dimension: any): Version;
     static decodeVersionInformation(versionBits: any): Version;
-    static buildVersions(): Version[];
 }
